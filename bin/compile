@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+echo "-----> Installing QGTunnel"
+# change to the the BUILD_DIR ($1)
+cd $1
+# download the binary (-O) silently (-s)
+ curl https://s3.amazonaws.com/quotaguard/qgtunnel-latest.tar.gz | tar xz
